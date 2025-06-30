@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Responsive Image Gallery</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <h1>Image Gallery</h1>
+
+  <div class="filters">
+    <button onclick="filterImages('all')">All</button>
+    <button onclick="filterImages('Nature')">Nature</button>
+    <button onclick="filterImages('Tech')">Tech</button>
+    <button onclick="filterImages('Temples')">Temples</button>
+    <button onclick="filterImages('Animals')">Animals</button>
+    <button onclick="filterImages('Art')">Art</button>
+  </div>
+
+    <div class="gallery">
+    <img src="images\download 1.jpeg" alt="Tech" data-category="Tech" onclick="openLightbox(0)">
+    <img src="images\download 2.jpeg" alt="Nature" data-category="Nature" onclick="openLightbox(1)">
+    <img src="images\download 3.jpeg" alt="Tech" data-category="Tech" onclick="openLightbox(2)">
+    <img src="images\download 4.jpeg" alt="Animals" data-category="Animals" onclick="openLightbox(3)">
+    <img src="images\download 5.webp" alt="Tech" data-category="Tech" onclick="openLightbox(4)">
+    <img src="images\download 6.jpeg" alt="Animals" data-category="Animals" onclick="openLightbox(5)">
+    <img src="images\download 7.jpeg" alt="Tech" data-category="Tech" onclick="openLightbox(6)">
+    <img src="images\download 8.jpeg" alt="Nature" data-category="Nature" onclick="openLightbox(7)">
+    <img src="images\download 9.jpeg" alt="Tech" data-category="Tech" onclick="openLightbox(8)">
+    <img src="images\download 10.jpeg" alt="Art" data-category="Art" onclick="openLightbox(9)">
+    <img src="images\download 11.jpeg" alt="Temples" data-category="Temples" onclick="openLightbox(10)">
+    <img src="images\download 12.webp" alt="Art" data-category="Art" onclick="openLightbox(11)">
+    <img src="images\download 13.jpeg" alt="Temples" data-category="Temples" onclick="openLightbox(12)">
+    <img src="images\download 14.jpeg" alt="Art" data-category="Art" onclick="openLightbox(13)">
+    <img src="images\download 15.webp" alt="Temples" data-category="Temples" onclick="openLightbox(14)">
+    <img src="images\download 16.jpeg" alt="Art" data-category="Art" onclick="openLightbox(15)">
+    <img src="images\download 17.jpeg" alt="Temples" data-category="Temples" onclick="openLightbox(16)">
+    <img src="images\download 18.jpeg" alt="Art" data-category="Art" onclick="openLightbox(17)">
+       <!-- Add more as needed -->
+  </div>
+
+  <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <span class="prev" onclick="event.stopPropagation(); changeImage(-1)">❮</span>
+    <img id="lightbox-img" />
+    <span class="next" onclick="event.stopPropagation(); changeImage(1)">❯</span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
