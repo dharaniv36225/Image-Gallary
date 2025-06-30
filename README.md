@@ -38,25 +38,58 @@ start index.html
 Just drop your image files into the images/ folder, and update the <img> tags in index.html.
 <img src="images/mypic.jpeg" data-category="Nature" alt="Beautiful Nature" onclick="openLightbox(0)">
 📁 Folder Structure
-css
-Copy
-Edit
+
 image-gallery/
 ├── index.html        → Main HTML page
 ├── style.css         → Gallery styling
 ├── script.js         → JS for filtering and lightbox
 └── images/           → Your gallery images
 📸 Preview
-![Screenshot (96)](https://github.com/user-attachments/assets/5e6cdb41-209d-470c-973a-406b4bca78e2)
+📸 Responsive Image Gallery
+A clean and modern responsive image gallery built using HTML, CSS, and JavaScript. Users can filter images by category such as Nature, Tech, Temples, Animals, and Art with smooth transitions.
 
-💡 Customization Ideas
-🌙 Add dark mode toggle
+🌐 Features
+🔍 Filter images by category using buttons
 
-🖼️ Add captions/descriptions below images
+💻 Fully responsive layout for mobile, tablet, and desktop
 
-🔄 Load images dynamically via JSON or API
+🎨 Visually appealing UI with rounded images and modern fonts
 
-📸 Add image upload or admin dashboard
+📁 Local file support (open with your browser)
+
+🛠️ Technologies Used
+HTML5
+
+CSS3
+
+JavaScript
+
+🖼️ Gallery Categories
+All: Show all images
+
+Nature: Scenic landscapes, rivers, mountains
+
+Tech: AI, robots, chips
+
+Temples: (You can add religious or historical temple images here)
+
+Animals: Wildlife such as tigers, turtles
+
+Art: Digital and conceptual artwork
+
+📂 How to Run
+Clone or download the project files.
+
+Open image gallary.html in any modern browser (e.g., Chrome, Edge).
+
+Click category buttons to filter the gallery.
+
+📸 Screenshot
+![gallery_screenshot](https://github.com/user-attachments/assets/66c1432e-66d4-4e6c-8b6a-a36d29d51033)
+📝 Notes
+You can add more images by placing them in the same directory and updating the HTML accordingly.
+
+To change categories or tags, modify the image classes and buttons in the HTML.
 
 🪪 License
 This project is free and open-source. Use it, remix it, and make it yours. Attribution is appreciated but not required.
